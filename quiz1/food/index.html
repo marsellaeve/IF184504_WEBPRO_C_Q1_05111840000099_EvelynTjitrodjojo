@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>EvelynTjitrodjojo</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="../css/stylefood.css"/>
+  </head>
+  <body>
+    <div class="header">
+      <h1>EvelynTjitrodjojo's Story</h1>
+      <p>A website made for sharing</p>
+    </div>
+    <div class="topnav">
+      <!-- Centered link -->
+      <div class="topnav-centered">
+        <a href="../index.html" class="active">EvelynTjitrodjojo</a>
+      </div>
+  
+      <!-- Left-aligned links (default) -->
+      <a href="../food/index.html">Food</a>
+      <a href="../tourist/index.html">Tourist</a>
+  
+      <!-- Right-aligned links -->
+      <div class="topnav-right">
+        <a href="../hometown/index.html">Hometown</a>
+        <a href="../profile/index.html">Profile</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+      <h2 style="text-align: center; font-size:36px; font-weight: normal; margin-bottom:-10px;">Lokal Food You Have To Try In Surabaya</h2>
+      <h2 style="text-align: center; font-size:18px; font-weight: normal;">Top 3 Foods That I Love</h2>
+    </div></div>
+    <!-- Slideshow container -->  
+    <div class="slideshow-container">
+      <!-- Full-width slides/quotes -->
+      <div class="mySlides">
+        <h2 style="text-align: left; font-size:30px; font-weight: normal; color: #2a7886; margin-left: 200px;">1. Rawon</h2>
+        <img src="../img/rawon.jpg" style="width: 70%;" class="center">
+        <h6>Rawon is a typical Indonesian food originating from East Java. This flavorful soup is usually made with slow-boiled beef and other traditional Indonesian ingredients such as lime leaves, lemongrass, ginger, and chilies. However, the key is the kluwek fruit, Indonesia's black bean.
+        <br><br>This typical Indonesian spice is highly toxic when raw, and always needs to be fermented before consumption. It is ground with other ingredients and spices, giving the dish a sour and earthy taste and a unique dark black color. The origin of the dish come from the city of Surabaya, the capital of East Java.
+        </h6>
+        <h6><b>You can find Rawon at Rawon Setan, Embong Malang 78 Surabaya.
+          <br>Opening Hours: 8 am to 4.30 pm. Price starts from Rp 25000.</b></h6>
+      </div>
+      <div class="mySlides">
+        <h2 style="text-align: left; font-size:30px; font-weight: normal; color: #2a7886; margin-left: 200px;">2. Rujak Cingur</h2>
+        <img src="../img/rujakcingur.jpg" class="center"style="width: 70%;">
+        <h6>Rujak Cingur is one of the many versions of Indonesian rujak, a fruit salad consisting of different tropical fruits, usually served with a spicy and sweet sauce. Rujak cingur is a unique variety, because apart from fruit, it also contains rare vegetables and ingredients - animal muzzle.
+        <br><br>Traditionally, beef or buffalo muzzle is used in rujak cingur, while fruit and vegetables are served boiled or raw. This dish is assembled and coated with a spicy Indonesian sauce made with shrimp paste, peanuts, sugar and chilies.
+        <br><br>It is traditionally served on banana leaves and garnished with prawn crackers. Lontong, crackers, tahu, or tempe are usually served as side dishes. Created in East Java, and is very popular in the region's capital city, Surabaya.
+        </h6>
+        <h6><b>You can find Rujak Cingur at Tujak Cingur Genteng, Genteng Durasim 29 Surabaya.
+          <br>Opening Hours: 11 am to 5 pm. Price starts from Rp 10000.</b></h6>
+      </div>
+      <div class="mySlides">
+        <h2 style="text-align: left; font-size:30px; font-weight: normal; color: #2a7886; margin-left: 200px;">3. Lontong Balap</h2>
+        <img src="../img/lontongbalap.png" class="center"style="width: 70%;">
+        <h6>
+          Lontong Balap, originally from Surabaya, has a unique story behind its name. "Balap" literally means "racing". In the past, these food vendors carried heavy baskets competing to get customers at the Wonokromo market (pasar Wonokromo).
+          This dish is mainly made from lontong, bean sprouts, fried tofu, and "lentho". Served with clear broth along with fried onions, sweet soy sauce, crackers, and shell meat satay. This unusual dish can easily be found in the entire region of Surabaya.
+        </h6>
+        <h6><b>You can find Lontong Balap at Lontong Balap Pak Gendut, Prof. Dr. Moestopo Surabaya.
+          <br>Opening Hours: 9 am to 9 pm. Price starts from Rp 14000.</b></h6>
+      </div>
+    
+      <!-- Next/prev buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;
+        <p>Prev<br>Food</p></a>
+      <a class="next" onclick="plusSlides(1)">&#10095;<p style="text-align: right;">Next<br>Food</p></a>
+    </div>
+    <!-- Dots/bullets/indicators -->
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+    
+    <div style="background-color: white;">
+        <br>
+    </div>
+    <div class="footer">
+        <h2>Have A Beautiful Day!</h2>
+    </div>
+  </body>
+</html>

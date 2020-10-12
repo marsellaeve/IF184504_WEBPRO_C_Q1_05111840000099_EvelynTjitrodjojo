@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>EvelynTjitrodjojo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+        <div class="header">
+            <h1>EvelynTjitrodjojo's Story</h1>
+            <p>A website made for sharing</p>
+        </div>
+        <div class="topnav">
+            <!-- Centered link -->
+            <div class="topnav-centered">
+            <a href="" class="active">EvelynTjitrodjojo</a>
+            </div>
+        
+            <!-- Left-aligned links (default) -->
+            <a href="food/index.html">Food</a>
+            <a href="tourist/index.html">Tourist</a>
+        
+            <!-- Right-aligned links -->
+            <div class="topnav-right">
+            <a href="hometown/index.html">Hometown</a>
+            <a href="profile/index.html">Profile</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="side">
+                <h2 style="font-weight: normal; margin-bottom:-15px">About Writer</h2>
+                <h4 style="font-weight: normal;">Sharing is Caring</h4>
+                <div class="container">
+                    <img src="img/V.jpeg" style="width:40%">
+                    <p><span>Evelyn Tjitrodjojo</span><br>20 Years old</p>
+                    <p>Currently, I am one of the 5th semester informatics students. With this website, I want to share about my hometown, Surabaya. I've known my hometown for 20 years.</p>
+                    <a href="profile/index.html" style="float: right; padding-right: 10px;">Know Writer</a>
+                </div>
+            </div>
+            <div class="main">
+                <p style="text-align: center; font-size:36px; font-weight: normal; margin-bottom:-15px">Sparkling Surabaya</p>
+                <p style="text-align: center; font-size:18px; font-weight: normal;">Surabaya Has A Story</p><br>
+                <section>
+                    <img class="mySlides" src="img/surabaya.jpg" style="width:37%;">
+                    <img class="mySlides" src="img/surabaya1.jpg" style="width:37%">
+                    <img class="mySlides" src="img/surabaya2.jpg" style="width:37%">
+                    <img class="mySlides" src="img/surabaya4.jpg" style="width:37%">
+                </section>
+                <script>
+                    var myIndex = 0;
+                    carousel();
+                    function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}
+                    x[myIndex-1].style.display = "block";
+                    setTimeout(carousel, 3000);
+                    }
+                </script>
+                <p style="padding-left:20px;font-size: 20px; padding-right:20px; padding-top:20px; text-align: justify;">Surabaya is my hometown. In Surabaya, I have experienced many joys and sorrows in various places.
+                    Either from food that I can't leave behind, or from places that hold memories in my life. Surabaya is a city full of miracles, from when I was born, until now I studied at one of the public universities in Surabaya.
+                    Surabaya is my hometown. In Surabaya, I have experienced many joys and sorrows in various places. Either from food that I can't leave behind, or from places that hold memories in my life. Surabaya is a city full of miracles, from when I was born, until now I studied at one of the public universities in Surabaya.
+                    <br><br>Surabaya is known as the City of Heroes because of its history which was taken into account in the struggle of Arek-Arek Suroboyo (Surabaya youths) in defending the independence of the Indonesian nation from invaders.
+                    <a href="hometown/index.html">More about hometown</a>
+                </p><br>
+                <img src="img/lontongbalap.png" style="width:42%; float: left; padding-left: 20px;">
+                <p style="font-size: 20px;padding-left:420px; padding-right:20px; text-align: justify;">Lontong Balap is one of the foods that I really like in my hometown. Lontong Balap is very easy to find, it can pass in front of the house. 
+                    There is a distinctive aroma and delicious taste when you enjoy a plate of "Lontong Balap" typical of Surabaya. Lontong Balap is an authentic food from Surabaya, which has a unique story behind the name "Lontong Balap".
+                <a href="food/index.html">More about foods</a>
+                </p><br><br>
+                
+                <img src="img/sanggaragung.jpg" style="width:40%; float: right; padding-right: 20px;">
+                <br><br>
+                <p style="font-size: 20px;padding-left:20px; padding-right:420px; text-align: justify;">
+                    One of the most meaningful places to me in Surabaya is the Klenteng Sanggar Agung. Every year my family and I come to sow flowers in the kenjeran sea. We pray and commemorate the day our family members died. But the Klenteng Sanggar Agung is also a great tourist spot that you shouldn't miss.
+                <a href="tourist/index.html">More about tourist</a>
+                </p>
+                <div style="background-color: #eee; border:2px solid #2a7886; color: #2a7886; margin-top: 100px; margin-bottom: 20px;">
+                    <p style="font-size: 18px;padding-left:20px; padding-right:20px; text-align: justify;">
+                        One of the key reasons to come to Surabaya is for the chance to check out an authentic slice of city life in Indonesia away from the major tourist hubs and you can also spend time eating your way around the city which is known for a clutch of signature dishes.
+                        So, let's come and explore my beautiful hometown, Surabaya!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: white;">
+            <br>
+        </div>
+        <div class="footer">
+            <h2>Have A Beautiful Day!</h2>
+        </div>
+    </body>
+</html>

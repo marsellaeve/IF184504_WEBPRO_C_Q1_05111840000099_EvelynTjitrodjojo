@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>EvelynTjitrodjojo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css/stylefood.css"/>
+    </head>
+    <body>
+        <div class="header">
+            <h1>EvelynTjitrodjojo's Story</h1>
+            <p>A website made for sharing</p>
+        </div>
+        <div class="topnav">
+            <!-- Centered link -->
+            <div class="topnav-centered">
+              <a href="../index.html" class="active">EvelynTjitrodjojo</a>
+            </div>
+        
+            <!-- Left-aligned links (default) -->
+            <a href="../food/index.html">Food</a>
+            <a href="../tourist/index.html">Tourist</a>
+        
+            <!-- Right-aligned links -->
+            <div class="topnav-right">
+              <a href="../hometown/index.html">Hometown</a>
+              <a href="../profile/index.html">Profile</a>
+            </div>
+          </div>
+        <div class="row">
+            <div class="column">
+                <div style="background-color: white; margin-left: 250px; margin-right: 250px; margin-top: 30px; margin-bottom: 50px;">
+                    <h2 style="text-align: center; padding-top: 40px; font-size:36px; font-weight: normal; margin-bottom:-10px;">Sparkling Surabaya</h2>
+                    <h2 style="text-align: center;  font-size:18px; font-weight: normal; margin-bottom: -50px;">My Beautiful Hometown</h2>
+                    <section>
+                        <img class="mySlides2" src="../img/up1.jpeg" style="width:100%;">
+                        <img class="mySlides2" src="../img/up2.jpeg" style="width:100%;">
+                        <img class="mySlides2" src="../img/up3.jpeg" style="width:100%;">
+                        <img class="mySlides2" src="../img/up4.jpeg" style="width:100%;">
+                    </section>
+                    <script>
+                        var myIndex = 0;
+                        carousel();
+                        function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides2");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}
+                        x[myIndex-1].style.display = "block";
+                        setTimeout(carousel, 3000);
+                        }
+                    </script>
+                    <p style="text-align: center; margin-top: -30px; font-style: italic;">Pic by me</p>
+                    <p style="font-size: 18px; text-align: justify; padding-left: 40px;padding-bottom: 40px;padding-right: 40px;">
+                    <br><br>Surabaya is my hometown. In Surabaya, I have experienced many joys and sorrows in various places. Either from food that I can't leave behind, or from places that hold memories in my life. Surabaya is a city full of miracles, from when I was born, until now I studied at one of the public universities in Surabaya. Surabaya is my hometown. In Surabaya, I have experienced many joys and sorrows in various places. Either from food that I can't leave behind, or from places that hold memories in my life. Surabaya is a city full of miracles, from when I was born, until now I studied at one of the public universities in Surabaya.
+                    <br><br>Surabaya is known as the City of Heroes because of its history which was taken into account in the struggle of Arek-Arek Suroboyo (Surabaya youths) in defending the independence of the Indonesian nation from invaders. 
+                    One of the most famous tourist attractions in Surabaya is "Tugu Pahlawan". Tugu is a historical monument.
+                    The monument was built so that the children of Surabaya know what the heroes of the past did and they will remember the services of these heroes. Tugu Pahlawan also has many unique and historical objects.
+                    <br><br>Surabaya, which is the capital of East Java Province, is the second largest city in Indonesia after Jakarta. It is divided by five areas; Central Surabaya, North Surabaya, East Surabaya, South Surabaya and West Surabaya. Usually the temperature is 32 degrees Celsius, so the city is not cool. On the other hand, Surabaya is a dense and modern city with busy people every day. The view of Surabaya is different from Malang's, because we cannot see the mountains. However, we can see many buildings with modern architecture and several buildings with colonial architecture. It also has Asian architecture buildings in Chinatown.
+                    <br><br>For me, Surabaya is the best place to spend a day with lots of happiness. How perfect it is.
+                    </p>
+                    <img src="../img/surabaya.jpg" style="width:30%; margin-left: 40px; float: left;">
+                    <img src="../img/surabaya1.jpg" style="width:30%;margin-left: 5px; float: left;">
+                    <img src="../img/surabaya4.jpg" style="width:30%; margin-right: 40px;margin-left: 5px; margin-bottom: 40px;">
+                </div>
+            </div>
+        </div>
+        <div style="background-color: white;">
+            <br>
+        </div>
+        <div class="footer">
+            <h2>Have A Beautiful Day!</h2>
+        </div>
+    </body>
+</html>

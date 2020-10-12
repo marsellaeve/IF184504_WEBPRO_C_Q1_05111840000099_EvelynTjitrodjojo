@@ -1,0 +1,228 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    background: #e1f4f3;
+    color: #2a7886;
+}
+.header h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+}
+section{
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: white;
+    position: relative;
+    top: 70px;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+.topnav {
+    position: relative;
+    /* width: 100%; */
+    background: white;
+    background-color: white;
+    overflow: hidden;
+}
+hr{
+    margin-right: 195px;
+    margin-left: 195px;
+    border: 10px dotted white;
+    /* border-radius: 10px; */
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #8ac6d1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #8ac6d1;
+    color: white  ;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    /* background-color: white; */
+    color: #8ac6d1;
+    background-color: white;
+    font-size: 25px;
+}
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+    float: right;
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+.topnav a, .topnav-right {
+    float: none;
+    display: block;
+}
+
+.topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+}
+@media screen and (max-width: 400px){
+    .navbar a{
+        float: none;
+        width: 100%;
+    }
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 30px;
+  text-align: center;
+  background: #f1f1f1f1;
+}
+.mySlides2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    background-color: #e1f4f3;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 200px;
+    padding-right: 200px;
+    color: #2a7886
+}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+.column {
+    float: left;
+    padding-top: 20px;
+    width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    background-color:#f1f1f1f1;
+    float: left;
+    width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.center{
+    background-color: #f1f1f1f1;
+    display: block;
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-right: auto;
+    /* width: 50%; */
+}
+h3{
+    text-align: center;
+}
+.footer{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    text-align: center;
+    background: #e1f4f3;
+    color: #2a7886;
+}
